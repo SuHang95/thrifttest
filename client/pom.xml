@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>suhang</groupId>
-        <artifactId>thrifttest</artifactId>
+        <artifactId>transfer</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -64,10 +64,6 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>suhang</groupId>
-            <artifactId>server</artifactId>
-        </dependency>
 
         <!--org.slf4j-->
         <dependency>
