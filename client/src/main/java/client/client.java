@@ -14,21 +14,6 @@ import lombok.extern.slf4j.Slf4j;
 public class client {
     public static void main(String[] args) {
 
-        TTransport tTransport = new TFastFramedTransport(new TSocket("localhost",8899),600);
-        TProtocol tProtocol = new TCompactProtocol(tTransport);
-        server.HelloService.Client client = new server.HelloService.Client(tProtocol);
-        try{
-            //log.debug("Before open the tTRansport!");
-            tTransport.open();
-            String hello=client.sayHello("suhang");
-            //log.debug("Get a response:",hello);
-
-            System.out.println(hello);
-        }catch (Exception ex){
-            throw new  RuntimeException(ex.getMessage(),ex);
-        }finally {
-            tTransport.close();
-        }
     }
 }
 
